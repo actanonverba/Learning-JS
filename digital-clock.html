@@ -17,7 +17,7 @@
                 <h4>JS Digital Clock</h4>
             </div>
             <div class="card-body">
-                <div id="MyClockDisplay"></div>
+                <div id="ClockDisplay"></div>
             </div>
         </div>
     </div>
@@ -45,8 +45,8 @@
             s = (s < 10) ? "0" + s : s;
 
             var time = h + ":" + m + ":" + s + " " + session;
-            document.getElementById("MyClockDisplay").innerText = time;
-            document.getElementById("MyClockDisplay").textContent = time;
+            document.getElementById("ClockDisplay").innerText = time;
+            document.getElementById("ClockDisplay").textContent = time;
 
             setTimeout(showTime, 1000);
         }
